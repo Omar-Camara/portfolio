@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  </head>
+    <body>
+      <div id="parallax">
+        <div class="checkbox-container">
+        <label class="switch">
+          <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+          <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+          <input type="checkbox" class="input" id="themeSwitch">
+          <span class="slider"></span>
+        </label>
+        </div>
+      <header id="header">
+      <nav id="desktop-nav">
+        <div class="logo">Omar</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Omar</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      </header>
+      <section id="profile">
+       <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Omar Camara</h1>
+          <p class="section__text__p2">Student</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('images/Omar Camara Resume.pdf', '_blank')"
+            >
+              Resume
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact
+            </button>
+          </div>
+              <div class="copyright-icons">
+                  <ul class="wrapper">
+                      <li class="icon linkedin">
+                          <span class="tooltip">LinkedIn</span>
+                          <a href="https://www.linkedin.com/in/oc18/"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+                      </li>
+                      <li class="icon github">
+                          <span class="tooltip">GitHub</span>
+                          <a href="https://github.com/Username273183"><span><i class="fa-brands fa-github"></i></span></a>
+                      </li>
+                  </ul>
+                  </div>
+        </div>
+      </section>
+    </div>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://username273183.github.io/ist263/images/Professional_photo1JPG%20copy.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+             <i class="fa-solid fa-user-graduate fa"></i>
+              <h3>Education</h3>
+              <p>B.S. Bachelors Degree</p>
+              <p>May 2025</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My name is Omar Camara, and I’m currently pursuing my Bachelor of Science in Computer Science at Syracuse University. My interests include software and web development. Feel free to look around or contact me.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-brands fa-html5 fa-2x icon fa"></i>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-css3-alt fa-2x icon fa"></i>
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-js fa-2x icon fa"></i>
+               <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-java fa-2x icon fa"></i>
+                 <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-python fa-2x icon fa"></i>
+               <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-database fa-2x icon fa"></i>
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-database fa-2x icon fa"></i>
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-git-alt fa-2x icon fa"></i>
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-github fa-2x icon fa"></i>
+                 <div>
+                  <h3>GitHub</h3>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-microsoft fa-2x icon fa"></i>
+               <div>
+                  <h3>Microsoft Office</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/Screenshot 2024-01-14 at 9.55.08 AM.png"
+                alt="Diary App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Diary App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Username273183/personaldiary'"
+              >
+                Github
+              </button>
+             </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/todo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">To-Do List</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Username273183/ToDoProject'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/calc.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Username273183/Calc'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-paper-plane fa-2x fa"></i>
+          <p><a id="em" class="bottom-links">Omarcamara000@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin fa-2x fa"></i>
+          <p><a class="bottom-links" href="https://www.linkedin.com/in/oc18/">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="right">
+      <form action="https://formspree.io/f/xbjvzzyq" method="post">
+        <label for="nname"><span class="sr-only">Your Name</span></label>
+        <input placeholder="Name" class="input" name="text" type="text" id="nname" required>
+        <label for="email"><span class="sr-only">Your Email</span></label>
+        <input placeholder="Email" class="input" name="text" type="email" id="email" required>
+        <label for="message"><span class="sr-only">Your Message</span></label>
+        <textarea id="message" name="message" rows="4" placeholder="Message" autocomplete="on" spellcheck="true" required></textarea>
+        <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+            <span class="text">Submit</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </button>
+    </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 Omar Camara. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
