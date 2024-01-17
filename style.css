@@ -720,17 +720,6 @@ i {
 .copyright-icons em{
     padding-left: 200px;
 }
-
-@media only screen and (max-device-width: 1366px) {
-  #parallax {
-    background-attachment: scroll;
-  }
-}
-@media only screen and (max-device-width: 600px) {
-  /* footer {
-    margin-bottom: 50%;
-  } */
-}
 .switch {
   font-size: 17px;
   position: relative;
