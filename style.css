@@ -721,7 +721,7 @@ i {
     padding-left: 200px;
 }
 .switch {
-  font-size: 1rem;
+  font-size: 17px;
   position: relative;
   display: inline-block;
   width: 64px;
@@ -778,7 +778,7 @@ i {
   height: 24px;
 }
 
-.sun svg {
+/* .switch:hover */.sun svg {
   animation: rotate 15s linear infinite;
 }
 
@@ -793,7 +793,7 @@ i {
   }
 }
 
-.moon svg {
+/* .switch:hover */.moon svg {
   animation: tilt 5s linear infinite;
 }
 
@@ -835,7 +835,7 @@ i {
 
 }
 #em:hover{
-  color:var(--title);
+  color: var(--background);
   cursor: text;
   text-decoration: none;
   text-underline-offset: none;
@@ -989,17 +989,4 @@ input, textarea{
 
 .right form {
   width: 100%;
-}
-.skip{
-  background-color: #b2790f;
-  padding: 5px;
-  border: 1px solid #000000;
-  text-decoration: none;
-  position: absolute;/* Positions an element relative to the top left corner if the viewport */
-  top: 10px;
-  left: -999px; /* Push off the left side */
-}
-
-.skip:focus{
-  left:10px;
 }

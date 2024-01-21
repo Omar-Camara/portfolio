@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-    <script src="script.js"></script>
   </head>
     <body>
       <div id="parallax">
         <div class="checkbox-container">
         <label class="switch">
-          <span style="display:none">title</span>
           <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
           <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
           <input type="checkbox" class="input" id="themeSwitch">
@@ -27,7 +25,6 @@
         <div class="logo">Omar</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#main" class="skip"></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -44,7 +41,6 @@
             <span></span>
           </div>
           <ul class="menu-links">
-            <li><a href="#main" class="skip"></a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -53,7 +49,6 @@
         </div>
       </nav>
       </header>
-      <main>
       <section id="profile">
        <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
@@ -74,19 +69,19 @@
                   <ul class="wrapper">
                       <li class="icon linkedin">
                           <span class="tooltip">LinkedIn</span>
-                          <a href="https://www.linkedin.com/in/oc18/" target="_blank"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+                          <a href="https://www.linkedin.com/in/oc18/"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
                       </li>
                       <li class="icon github">
                           <span class="tooltip">GitHub</span>
-                          <a href="https://github.com/Username273183" target="_blank"><span><i class="fa-brands fa-github"></i></span></a>
+                          <a href="https://github.com/Username273183"><span><i class="fa-brands fa-github"></i></span></a>
                       </li>
                   </ul>
                   </div>
         </div>
       </section>
-    <!-- </div> -->
+    </div>
     <section id="about">
-      <p class="section__text__p1" id="main">Get To Know More</p>
+      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -217,8 +212,8 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="/images/todo.png"
-                alt="To-Do List"
+                src="images/todo.png"
+                alt="Project 2"
                 class="project-img"
               />
             </div>
@@ -235,8 +230,8 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="/images/calc.png"
-                alt="Calculator"
+                src="images/calc.png"
+                alt="Project 3"
                 class="project-img"
               />
             </div>
@@ -253,7 +248,6 @@
         </div>
       </div>
     </section>
-  </main>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -291,5 +285,6 @@
     <footer>
       <p>Copyright &#169; 2023 Omar Camara. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
